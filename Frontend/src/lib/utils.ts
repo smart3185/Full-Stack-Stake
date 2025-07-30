@@ -3,8 +3,8 @@ import { twMerge } from "tailwind-merge";
 import CryptoJS from "crypto-js";
 
 // API and Socket.IO base URLs
-export const API_BASE: string = "https://stake-ny3s.onrender.com";
-export const SOCKET_BASE: string = "https://stake-ny3s.onrender.com";
+export const API_BASE: string = "https://full-stack-stake.onrender.com";
+export const SOCKET_BASE: string = "https://full-stack-stake.onrender.com";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
