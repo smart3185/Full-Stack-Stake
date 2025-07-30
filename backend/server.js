@@ -49,6 +49,8 @@ const app = express();
 app.use(cors({
   origin: [
     'https://stake-self.vercel.app',
+     'https://full-stack-stake.vercel.app',
+    'https://royal-bet.live',
     'http://localhost:8080'
   ],
   credentials: true
