@@ -1,0 +1,19 @@
+<svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M5 20 L60 20 L75 25 L78 16 L60 12 L5 12 Z" fill="#FF2D55" stroke="#FF2D55" stroke-width="2"/>
+    <rect x="60" y="14" width="12" height="4" fill="#FF2D55" stroke="#FF2D55" stroke-width="1"/>
+    <rect x="10" y="10" width="8" height="4" fill="#FF2D55" stroke="#FF2D55" stroke-width="1"/>
+    <rect x="10" y="18" width="8" height="4" fill="#FF2D55" stroke="#FF2D55" stroke-width="1"/>
+    <ellipse cx="78" cy="20" rx="2" ry="6" fill="#FF2D55"/>
+    <rect x="76" y="18" width="4" height="4" fill="#FF2D55"/>
+    <rect x="70" y="16" width="2" height="8" fill="#FF2D55"/>
+    <rect x="65" y="14" width="2" height="8" fill="#FF2D55"/>
+    <rect x="20" y="16" width="10" height="2" fill="#FF2D55"/>
+    <rect x="30" y="15" width="5" height="4" fill="#FF2D55"/>
+    <rect x="35" y="14" width="5" height="6" fill="#FF2D55"/>
+    <rect x="40" y="13" width="5" height="8" fill="#FF2D55"/>
+    <rect x="45" y="12" width="5" height="10" fill="#FF2D55"/>
+    <rect x="50" y="13" width="5" height="8" fill="#FF2D55"/>
+    <rect x="55" y="14" width="5" height="6" fill="#FF2D55"/>
+  </g>
+</svg> 
