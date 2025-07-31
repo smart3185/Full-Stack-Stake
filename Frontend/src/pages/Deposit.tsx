@@ -50,8 +50,8 @@ const Deposit: React.FC = () => {
       return;
     }
     
-    if (depositAmount < 300) {
-      toast.error('Minimum deposit amount is ₹300');
+    if (depositAmount < 100) {
+      toast.error('Minimum deposit amount is ₹100');
       return;
     }
     
@@ -109,7 +109,7 @@ const Deposit: React.FC = () => {
           For example, deposit ₹1000 and get ₹1100 credited to your account.
         </p>
         <p className="text-green-200 text-xs mt-1">
-          Deposit limits: ₹300 - ₹10,000
+          Deposit limits: ₹100 - ₹10,000
         </p>
       </div>
       
@@ -133,16 +133,16 @@ const Deposit: React.FC = () => {
           <label className="block text-yellow-200 font-semibold mb-2 text-sm sm:text-base">Amount (INR)</label>
           <Input 
             type="number" 
-            min={300} 
+            min={100} 
             max={10000}
             value={amount} 
             onChange={e => setAmount(e.target.value)} 
             className="text-base sm:text-lg font-bold h-12" 
-            placeholder="Enter amount between ₹300 - ₹10,000"
+            placeholder="Enter amount between ₹100 - ₹10,000"
             required 
           />
           <div className="text-xs text-slate-400 mt-1">
-            Minimum: ₹300 | Maximum: ₹10,000
+            Minimum: ₹100 | Maximum: ₹10,000
           </div>
         </div>
         <div>

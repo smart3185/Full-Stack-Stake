@@ -34,6 +34,11 @@ const WithdrawAccountList: React.FC<Props> = ({ accounts, onWithdraw }) => {
       return;
     }
     
+    if (Number(amounts[i]) < 200) {
+      toast.error('Minimum withdrawal amount is ₹200');
+      return;
+    }
+    
     // Debug logging
     console.log('Withdraw attempt:', {
       accountIndex: i,
@@ -148,7 +153,7 @@ const WithdrawAccountList: React.FC<Props> = ({ accounts, onWithdraw }) => {
               <div className="text-slate-300 text-sm">Mobile: {acc.mobile}</div>
             </div>
             <form className="flex gap-2 items-center" onSubmit={e => { e.preventDefault(); handleWithdraw(i); }}>
-              <Input type="number" min={1} placeholder="Amount" value={amounts[i] || ''} onChange={e => handleAmountChange(i, e.target.value)} className="w-28" required />
+              <Input type="number" min={200} placeholder="Amount" value={amounts[i] || ''} onChange={e => handleAmountChange(i, e.target.value)} className="w-28" required />
               {acc.withdrawPassword && (
                 <Input type="password" placeholder="Password" value={passwords[i] || ''} onChange={e => handlePasswordChange(i, e.target.value)} className="w-32" required />
               )}
