@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const API_BASE = 'https://stake-ny3s.onrender.com';
+const API_BASE = 'https://full-stack-stake.onrender.com';
 
 const AccountStatement: React.FC = () => {
   const [statements, setStatements] = useState<any[]>([]);
