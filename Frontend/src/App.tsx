@@ -163,7 +163,7 @@ function Layout() {
       {!isAdminRoute && <Navigation balance={balance} />}
       {!isAdminRoute && location.pathname !== '/auth' && location.pathname !== '/forgot-password' && <DepositWithdrawHeader />}
       <Outlet context={{ setBalance }} />
-      {!isAdminRoute && location.pathname !== '/auth' && location.pathname !== '/forgot-password' && <WhatsAppSupport />}
+      {!isAdminRoute && location.pathname !== '/auth' && location.pathname !== '/forgot-password' && location.pathname === '/casino/slots' && <WhatsAppSupport />}
     </>
   );
 }
